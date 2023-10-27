@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color-orange:#f57b5a;
+}
+
+.my-container {
+    @apply w-[85%] max-w-[1400px] mx-auto
+}
+
+.pri-btn{
+    padding: 8px 20px;
+    background-color: var(--color-orange);
+    display: block;
+    color: white;
+    font: 600;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all ease-in-out .3s;
+    transform-origin: left;
+}
+
+.pri-btn:hover{
+    transform: scale(1.03);
+    @apply shadow-lg shadow-[#c97c67]
+}
