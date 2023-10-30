@@ -5,11 +5,15 @@ import NavCategory from './NavCategory';
 const Navbar = () => {
     return (
         <div>
-            <NavbarTop></NavbarTop>
+            <div className='hidden md:block'>
+                <NavbarTop></NavbarTop>
+            </div>
 
             <NavbarMiddle></NavbarMiddle>
 
-            <NavCategory></NavCategory>
+            <div className='lg:block hidden'>
+                <NavCategory></NavCategory>
+            </div>
         </div>
     );
 };

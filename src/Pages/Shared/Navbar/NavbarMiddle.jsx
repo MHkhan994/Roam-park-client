@@ -4,20 +4,20 @@ import { Link } from 'react-router-dom';
 
 const NavbarMiddle = () => {
     return (
-        <div className="py-4 border-b border-t my-1">
-            <div className="my-container grid grid-cols-3 justify-between items-center">
-                <Link to={'#'}>
-                    <img className="h-8" src="/logo.png" alt="" />
+        <div className="md:py-4 py-2 md:border-b md:border-t my-1">
+            <div className="my-container grid lg:grid-cols-3 md:grid-cols-2 justify-center md:justify-between items-center">
+                <Link to={'/'}>
+                    <img className="h-8 mx-auto md:mx-0" src="/logo.png" alt="" />
                 </Link>
                 <div>
-                    <form className="w-[35vw] mx-auto h-10 border rounded-md flex items-center px-3">
+                    <form className="lg:w-[35vw] md:w-full w-[95vw] mx-auto h-10 border mt-3 rounded-md flex items-center px-3">
                         <input type="text" placeholder='Search Product' className="h-full w-full border-none pe-2 outline-none" />
                         <button>
                             <IoSearchOutline className='text-xl pri-text' />
                         </button>
                     </form>
                 </div>
-                <div className='flex justify-center items-center text-4xl ms-auto text-gray-600'>
+                <div className='lg:flex hidden justify-center items-center text-4xl ms-auto text-gray-600'>
                     <button className='relative'>
                         <LiaShoppingBagSolid />
                         <div className='absolute top-0 left-0 h-full w-full flex justify-center items-center'>
