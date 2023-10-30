@@ -1,0 +1,117 @@
+[
+    {
+        "name": "new in"
+    },
+    {
+        "name": "men",
+        "subCategory": [
+            {
+                "name": "shirts",
+                "subCategory": [
+                    "formal shirts",
+                    "casual shirts"
+                ]
+            },
+            {
+                "name": "pants",
+                "subCategory": [
+                    "formal pants",
+                    "jeans",
+                    "trousers",
+                    "shorts"
+                ]
+            },
+            {
+                "name": "panjabies"
+            },
+            {
+                "name": "pajamas"
+            },
+            {
+                "name": "t-shirts"
+            },
+            {
+                "name": "polos"
+            }
+        ]
+    },
+    {
+        "name": "women",
+        "subCategory": [
+            {
+                "name": "lawns",
+                "subCategory": [
+                    "lawn 3 piece",
+                    "lawn 2 piece",
+                    "lawn 1 piece"
+                ]
+            },
+            {
+                "name": "kurti"
+            },
+            {
+                "name": "pants",
+                "subCategory": [
+                    "jeans",
+                    "palazzo",
+                    "plain bottoms",
+                    "leggings"
+                ]
+            },
+            {
+                "name": "long dresses"
+            },
+            {
+                "name": "sarees"
+            },
+            {
+                "name": "skirts"
+            }
+        ]
+    },
+    {
+        "name": "kids",
+        "subCategory": [
+            {
+                "name": "boys",
+                "subCategory": [
+                    "boys panjabi",
+                    "boys jeans",
+                    "boys shirts",
+                    "boys t-shirts",
+                    "boys polos"
+                ]
+            },
+            {
+                "name": "girls",
+                "subCategory": [
+                    "girls tops",
+                    "girls bottoms",
+                    "girls lawns"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "shoes",
+        "subCategory": [
+            {
+                "name": "men",
+                "subCategory": [
+                    "casual shoes",
+                    "formal shoes",
+                    "mens sandal",
+                    "sports"
+                ]
+            },
+            {
+                "name": "women",
+                "subCategory": [
+                    "ladies sandal",
+                    "ladies heel",
+                    "ladies sports shoes"
+                ]
+            }
+        ]
+    }
+]

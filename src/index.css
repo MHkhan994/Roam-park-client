@@ -10,25 +10,64 @@ body{
 
 :root{
     --color-orange:#f57b5a;
+    --color-dark: #1f2937;
 }
 
 .my-container {
-    @apply w-[85%] max-w-[1400px] mx-auto
+    @apply lg:w-[85%] max-w-[1400px] mx-auto w-[95%]
+}
+
+.pri-text{
+    color: var(--color-orange);
+}
+
+.dark-text{
+    color: var(--color-dark);
 }
 
 .pri-btn{
     padding: 8px 20px;
-    background-color: var(--color-orange);
+    background-color: var(--color-dark);
     display: block;
     color: white;
     font: 600;
     border-radius: 5px;
     font-size: 18px;
-    transition: all ease-in-out .3s;
     transform-origin: left;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    border: 0px;
 }
 
-.pri-btn:hover{
-    transform: scale(1.03);
-    @apply shadow-lg shadow-[#c97c67]
+.pri-btn::before{
+    content: "";
+    position: absolute;
+    top: 46%;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    background: var(--color-orange);
+    transition: all ease-out .4s;
+}
+
+.pri-btn:hover::before{
+    top: -100%;
+}
+
+.pri-btn::after{
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left:0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    background: var(--color-orange);
+    transition: all ease-out .4s;
+}
+
+.pri-btn:hover::after{
+    bottom: -100%;
 }
