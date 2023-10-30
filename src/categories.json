@@ -44,9 +44,9 @@
             {
                 "name": "lawns",
                 "subCategory": [
-                    "lawn 3 piece",
-                    "lawn 2 piece",
-                    "lawn 1 piece"
+                    "lawn 3 pieces",
+                    "lawn 2 pieces",
+                    "lawn 1 pieces"
                 ]
             },
             {
@@ -56,7 +56,7 @@
                 "name": "pants",
                 "subCategory": [
                     "jeans",
-                    "palazzo",
+                    "palazzos",
                     "plain bottoms",
                     "leggings"
                 ]
@@ -78,7 +78,7 @@
             {
                 "name": "boys",
                 "subCategory": [
-                    "boys panjabi",
+                    "boys panjabies",
                     "boys jeans",
                     "boys shirts",
                     "boys t-shirts",
@@ -103,16 +103,72 @@
                 "subCategory": [
                     "casual shoes",
                     "formal shoes",
-                    "mens sandal",
-                    "sports"
+                    "mens sandals",
+                    "sports",
+                    "loafers",
+                    "sneakers"
                 ]
             },
             {
                 "name": "women",
                 "subCategory": [
-                    "ladies sandal",
-                    "ladies heel",
-                    "ladies sports shoes"
+                    "ladies sandals",
+                    "ladies heels",
+                    "ladies sports",
+                    "ladies sneakers"
+                ]
+            },
+            {
+                "name": "kid boys",
+                "subCategory": [
+                    "boys loafers",
+                    "boys sandals",
+                    "boys dress shoes",
+                    "boys school shoes",
+                    "boys sneakers"
+                ]
+            },
+            {
+                "name": "kid girls",
+                "subCategory": [
+                    "girls sandals",
+                    "girls heels",
+                    "girls sneakers",
+                    "girls school shoes"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "accessories",
+        "subCategory": [
+            {
+                "name": "men",
+                "subCategory": [
+                    "belts",
+                    "watches",
+                    "bags",
+                    "wallets",
+                    "sunglasses"
+                ]
+            },
+            {
+                "name": "women",
+                "subCategory": [
+                    "bags",
+                    "sunglasses",
+                    "Jewelry",
+                    "watches"
+                ]
+            },
+            {
+                "name": "kids",
+                "subCategory": [
+                    "bracelets",
+                    "watches",
+                    "backpacks",
+                    "sunglasses",
+                    "belts"
                 ]
             }
         ]

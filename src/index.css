@@ -25,6 +25,10 @@ body{
     color: var(--color-dark);
 }
 
+.pri-bg{
+    background-color: var(--color-orange);
+}
+
 .pri-btn{
     padding: 8px 20px;
     background-color: var(--color-dark);
@@ -49,7 +53,7 @@ body{
     z-index: -1;
     height: 100%;
     background: var(--color-orange);
-    transition: all ease-out .4s;
+    transition: all ease-out .3s;
 }
 
 .pri-btn:hover::before{
@@ -65,7 +69,7 @@ body{
     z-index: -1;
     height: 100%;
     background: var(--color-orange);
-    transition: all ease-out .4s;
+    transition: all ease-out .3s;
 }
 
 .pri-btn:hover::after{

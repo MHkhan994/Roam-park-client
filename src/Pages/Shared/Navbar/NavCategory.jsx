@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import categories from '../../../../public/categories.json'
+import categories from '/src/categories.json'
 import './Navbar.css'
 
 const NavCategory = () => {
@@ -15,7 +15,7 @@ const NavCategory = () => {
                         navigate(`/shop?menu=${name}`)
                     }} key={name} className={`list-none cursor-pointer category-li uppercase z-30`}>{name}
                         {subCategory &&
-                            <ul className={`min-h-[250px] shadow-sm z-10 pt-10 grid grid-cols-6 px-[2%] absolute left-0 top-10 lg:w-[85vw] bg-white`}>
+                            <ul className={`min-h-[250px] shadow-sm z-10 py-10 grid grid-cols-6 px-[2%] absolute left-0 top-10 lg:w-[85vw] bg-white`}>
                                 {
                                     subCategory.map(subC => {
                                         const { name, subCategory } = subC
@@ -29,7 +29,7 @@ const NavCategory = () => {
                                             <div className='space-y-3'>
                                                 {
                                                     subCategory && subCategory.map(item => <p
-                                                        className='text-sm capitalize border-b text-gray-500 border-transparent hover:border-b hover:border-gray-300'
+                                                        className='text-sm capitalize text-gray-500 relative hover:ps-1 transition-all hover:border-s font-normal border-orange-300'
                                                         key={item}
                                                         onClick={(e) => {
                                                             e.stopPropagation()
