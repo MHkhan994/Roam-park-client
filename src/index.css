@@ -11,6 +11,8 @@ body{
 :root{
     --color-orange:#f57b5a;
     --color-dark: #1f2937;
+    scrollbar-color: #f57b5a #d4d4d4 !important;
+    scrollbar-width: thin !important;
 }
 
 .my-container {
@@ -75,3 +77,25 @@ body{
 .pri-btn:hover::after{
     bottom: -100%;
 }
+
+/* ==========scrollbar========== */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #bebebe;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-dark);
+    border-radius: 2px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-orange);
+  }

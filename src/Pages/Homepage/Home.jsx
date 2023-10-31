@@ -4,6 +4,7 @@ const Home = () => {
     return (
         <div className="my-container">
             <Banner></Banner>
+            <div className="h-screen"></div>
         </div>
     );
 };

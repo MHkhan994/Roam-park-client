@@ -1,6 +1,8 @@
 import { IoSearchOutline } from 'react-icons/io5';
 import { LiaShoppingBagSolid } from 'react-icons/lia';
 import { Link } from 'react-router-dom';
+import { openDrawer } from '../../../Hooks/drawerButtons';
+import CartDrawer from '../../../components/CartDrawer';
 
 const NavbarMiddle = () => {
     return (
@@ -18,7 +20,10 @@ const NavbarMiddle = () => {
                     </form>
                 </div>
                 <div className='lg:flex hidden justify-center items-center text-4xl ms-auto text-gray-600'>
-                    <button className='relative'>
+                    <button
+                        onClick={() => openDrawer('my-drawer-cart')}
+                        className='relative'
+                    >
                         <LiaShoppingBagSolid />
                         <div className='absolute top-0 left-0 h-full w-full flex justify-center items-center'>
                             <p className='text-sm pri-text pt-2 font-semibold'>4</p>
@@ -26,6 +31,7 @@ const NavbarMiddle = () => {
                     </button>
                 </div>
             </div>
+            <CartDrawer></CartDrawer>
         </div>
     );
 };
