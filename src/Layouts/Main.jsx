@@ -5,7 +5,7 @@ import MobileNavbar from "../Pages/Shared/MobileNavbar/MobileNavbar";
 const Main = () => {
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen bg-white">
             <Navbar></Navbar>
             <Outlet></Outlet>
             <div className="lg:hidden block z-40">

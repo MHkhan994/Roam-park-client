@@ -13,7 +13,7 @@ const MobileNavbar = () => {
                 <button onClick={() => openDrawer('my-drawer-sidebar')}>
                     <FaBars></FaBars>
                 </button>
-                <button className='relative'>
+                <button onClick={() => openDrawer('my-drawer-cart')} className='relative'>
                     <GiShoppingBag></GiShoppingBag>
                     <p className='absolute -top-2 text-white h-4 w-4 rounded-full pri-bg text-xs -right-3'>4</p>
                 </button>
@@ -25,8 +25,6 @@ const MobileNavbar = () => {
                     <AiFillHome></AiFillHome>
                 </Link>
             </div>
-
-            {/* =============sidebar========== */}
             <MenuDrawer></MenuDrawer>
         </div>
     );

@@ -31,6 +31,18 @@ body{
     background-color: var(--color-orange);
 }
 
+.dark-bg{
+    background-color: var(--color-dark);
+}
+
+.pri-border{
+    border-color: var(--color-orange);
+}
+
+.dark-border{
+    border-color: var(--color-dark);
+}
+
 .pri-btn{
     padding: 8px 20px;
     background-color: var(--color-dark);
@@ -78,6 +90,21 @@ body{
     bottom: -100%;
 }
 
+.sec-btn{
+    padding: 5px 20px;
+    background-color: var(--color-dark);
+    display: block;
+    color: white;
+    font: 600;
+    border-radius: 5px;
+    font-size: 18px;
+    transform-origin: left;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    border: 0px;
+}
+
 /* ==========scrollbar========== */
 /* width */
 ::-webkit-scrollbar {
@@ -98,4 +125,9 @@ body{
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: var(--color-orange);
+  }
+
+
+  .cart-drawer::-webkit-scrollbar{
+    width: 0;
   }

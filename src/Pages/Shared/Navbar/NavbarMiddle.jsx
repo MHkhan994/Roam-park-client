@@ -12,8 +12,8 @@ const NavbarMiddle = () => {
                     <img className="h-8 mx-auto md:mx-0" src="/logo.png" alt="" />
                 </Link>
                 <div className='pb-3'>
-                    <form className="lg:w-[35vw] md:w-full w-[95vw] mx-auto h-10 border mt-3 rounded-md flex items-center px-3">
-                        <input type="text" placeholder='Search Product' className="h-full w-full border-none pe-2 outline-none" />
+                    <form className="lg:w-[35vw] md:w-full bg-white w-[95vw] mx-auto h-10 border mt-3 rounded-md flex items-center px-3">
+                        <input type="text" placeholder='Search Product' className="h-full bg-white w-full border-none pe-2 outline-none" />
                         <button>
                             <IoSearchOutline className='text-xl pri-text' />
                         </button>
