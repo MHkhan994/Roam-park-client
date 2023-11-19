@@ -30,7 +30,7 @@ const NavCategory = () => {
             <div className='my-container flex justify-center items-center relative gap-16 font-semibold text-gray-700'>
                 {
                     categories.map((category) => {
-                        const { name, subCategory } = category
+                        const { name, subCategory, photo } = category
                         return <li
                             onClick={(e) => {
                                 e.stopPropagation()
@@ -39,7 +39,12 @@ const NavCategory = () => {
                             key={name}
                             className={`list-none cursor-pointer text-sm category-li uppercase z-30`}
                         >
-                            {name}
+                            <span className='flex gap-1'>
+                                {
+                                    photo && <img className='h-5' src={photo}></img>
+                                }
+                                {name}
+                            </span>
                             {subCategory &&
                                 <ul className={`${pFixed ? 'bg-[#ffffffe7] backdrop-blur-sm top-[42px]' : 'bg-white top-6'} min-h-[250px] shadow-sm z-10 py-10 grid grid-cols-6 px-[2%] absolute left-0 lg:w-[85vw]`}>
                                     {

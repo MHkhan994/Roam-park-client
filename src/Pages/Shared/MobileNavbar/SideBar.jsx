@@ -16,33 +16,42 @@ const SideBar = () => {
                     <AiFillCloseSquare className='pri-text text-2xl'></AiFillCloseSquare>
                 </button>
             </div>
-            <div className='border-t py-4 h-[85vh] overflow-y-auto pb-1'>
+            <div className='border-t h-[85vh] overflow-y-auto'>
                 {
                     categories.map((category, i) => {
-                        const { name, subCategory } = category
+                        const { name, subCategory, photo } = category
                         return <div
-                            key={name} className={`collapse ${subCategory && 'collapse-plus'}`}
+                            key={name} className={`pt-4 ${subCategory && 'collapse-plus collapse'}`}
                         >
-                            <input type="radio" name="my-accordion-2" id={`accordion-${i}`} />
                             {
-                                subCategory ?
-                                    <lebel
-                                        htmlFor={`accordion-${i}`}
-                                        className={`font-semibold font-ibm uppercase collapse-title dark-text text-base`}
-                                    >
-                                        {name}
-                                    </lebel>
-                                    :
+                                !subCategory ?
                                     <h4
-                                        className={`font-semibold font-ibm uppercase absolute ps-4 dark-text text-base`}
                                         onClick={(e) => {
                                             e.stopPropagation()
                                             navigate(`/shop?menu=${name}`)
                                             closeDrawer('my-drawer-sidebar')
                                         }}
+                                        className='font-semibold uppercase dark-text ps-1 py-1 m-0 text-base'
                                     >
-                                        {name}
+                                        <span className='flex gap-2 pt-0'>
+                                            <img src={photo} className='h-6'></img>
+                                            {name}
+                                        </span>
                                     </h4>
+                                    :
+                                    subCategory &&
+                                    <>
+                                        <input type="radio" name="my-accordion-2" id={`accordion-${i}`} />
+                                        <lebel
+                                            htmlFor={`accordion-${i}`}
+                                            className={`font-semibold uppercase collapse-title dark-text text-base`}
+                                        >
+                                            <span className='flex gap-2 items-center'>
+                                                <img src={photo} className='h-6'></img>
+                                                {name}
+                                            </span>
+                                        </lebel>
+                                    </>
                             }
                             {
                                 subCategory && <div className="collapse-content pe-0 me-0 text-base capitalize">
@@ -52,26 +61,35 @@ const SideBar = () => {
                                             return <div
                                                 key={name} className={`collapse ${subCategory && 'collapse-plus'}`}
                                             >
-                                                <input type="radio" name="my-accordion-3" id={`accordion-sub-${name}`} />
-                                                <label
-                                                    htmlFor={`accordion-sub-${name}`}
-                                                    className={`font-semibold font-ibm capitalize collapse-title dark-text text-base`}
-                                                    onClick={(e) => {
-                                                        e.stopPropagation()
-                                                        navigate(`/shop?menu=${category.name}&category=${name}`)
-                                                        closeDrawer('my-drawer-sidebar')
-                                                    }}
-                                                >
-                                                    <p
-                                                    >
-                                                        {name}
-                                                    </p>
-                                                </label>
+                                                {
+                                                    !subCategory ?
+                                                        <h4
+                                                            onClick={(e) => {
+                                                                e.stopPropagation()
+                                                                navigate(`/shop?menu=${category.name}&category=${name}`)
+                                                                closeDrawer('my-drawer-sidebar')
+                                                            }}
+                                                            className='font-semibold uppercase dark-text ps-8 py-2 m-0 text-base'
+                                                        >
+                                                            {name}
+                                                        </h4>
+                                                        :
+                                                        subCategory &&
+                                                        <>
+                                                            <input type="radio" name="my-accordion-3" id={`accordion-${i}`} />
+                                                            <lebel
+                                                                htmlFor={`accordion-${i}`}
+                                                                className={`font-semibold uppercase collapse-title dark-text text-base`}
+                                                            >
+                                                                <span className='ps-7'>{name}</span>
+                                                            </lebel>
+                                                        </>
+                                                }
                                                 {
                                                     subCategory && <div className="collapse-content space-y-4 text-base capitalize">
                                                         {
                                                             subCategory.map(item => <p
-                                                                className='text-sm capitalize text-gray-500 relative hover:ps-5 transition-all hover:border-s font-normal border-orange-300 ps-4'
+                                                                className='text-sm capitalize text-gray-500 relative hover:ms-8 transition-all hover:border-s font-normal border-orange-300 ms-7'
                                                                 key={item}
                                                                 onClick={(e) => {
                                                                     e.stopPropagation()

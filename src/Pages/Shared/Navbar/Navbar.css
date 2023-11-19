@@ -18,3 +18,16 @@
     opacity: 1;
     visibility: visible;
 }
+
+.collapse-title, :where(.collapse > input[type="checkbox"]), :where(.collapse > input[type="radio"]) {
+    width: 100%;
+    padding-right: 0rem;
+    min-height: 0;
+    transition: background-color 0.2s ease-out;
+
+    @apply p-1 py-2
+}
+
+.collapse-title::after{
+    top: 0 !important;
+}

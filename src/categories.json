@@ -1,12 +1,15 @@
 [
     {
-        "name": "new in"
+        "name": "new in",
+        "photo": "https://i.ibb.co/61DfDZv/christmas-bell.png"
     },
     {
-        "name": "exclusive"
+        "name": "exclusive",
+        "photo": "https://i.ibb.co/8K79NMK/investor.png"
     },
     {
         "name": "men",
+        "photo": "https://i.ibb.co/w7ftPGf/male-clothes.png",
         "subCategory": [
             {
                 "name": "shirts",
@@ -40,6 +43,7 @@
     },
     {
         "name": "women",
+        "photo": "https://i.ibb.co/FYVTjcJ/woman-clothes.png",
         "subCategory": [
             {
                 "name": "lawns",
@@ -74,6 +78,7 @@
     },
     {
         "name": "kids",
+        "photo": "https://i.ibb.co/Jt3CtBJ/clothes.png",
         "subCategory": [
             {
                 "name": "boys",
@@ -97,6 +102,7 @@
     },
     {
         "name": "shoes",
+        "photo": "https://i.ibb.co/NmNdXJ0/running-shoes.png",
         "subCategory": [
             {
                 "name": "men",
@@ -141,6 +147,7 @@
     },
     {
         "name": "accessories",
+        "photo": "https://i.ibb.co/m674pXW/accessories.png",
         "subCategory": [
             {
                 "name": "men",
